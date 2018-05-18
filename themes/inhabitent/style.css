@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Adam Roerick
-Author URI: https://github.com/aroerick
-Description: A simple, beatiful, natural theme.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -282,6 +282,12 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -666,3 +672,34 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  background-image: url(../../assets/images/dark-wood.png); }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .site-footer .site-info h3 {
+      color: #d99054; }
+    .site-footer .site-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+  .site-footer .legal {
+    width: 100%;
+    text-align: center; }

@@ -1,0 +1,26 @@
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-image: url(../../assets/images/dark-wood.png);
+    .site-info{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        h3 {
+            color: #d99054;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .legal {
+        width: 100%;
+        text-align: center;
+    }
+}
