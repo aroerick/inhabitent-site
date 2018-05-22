@@ -14,9 +14,20 @@
 					<div class="contact">
 						<h3 class="uppercase">contact info</h3>
 						<ul>
-							<li>info@inhabitent.com</li>
-							<li>778-456-7891</li>
-							<li> f t g+ i</li>
+							<li>
+								<i class="fas fa-envelope"></i>
+								<a href="#">info@inhabitent.com</a>
+							</li>
+							<li>
+								<i class="fas fa-phone"></i>
+								778-456-7891
+							</li>
+							<li>
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-twitter-square"></i>
+								<i class="fab fa-google-plus-square"></i>
+								<i class="fab fa-instagram"></i>
+							</li>
 						</ul>
 					</div>
 					<div class="hours">
@@ -28,7 +39,7 @@
 					</div>
 				</div><!-- .site-info -->
 				<div class="footer-logo">
-					<img src="./assets/images/inhabitent-logo-text.svg" alt="Inhabitent Logo" />
+					<img src="<?php echo get_template_directory_uri() ?>/assets/images/inhabitent-logo-text.svg" width="330px" alt="Inhabitent Logo" />
 				</div>
 				<div class="legal">
 					<p class="uppercase">copyright &copy; 2018 inhabitent</p>

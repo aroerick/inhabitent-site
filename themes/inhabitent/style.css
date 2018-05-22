@@ -331,6 +331,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+body {
+  line-height: 1.75; }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -734,6 +737,8 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+  line-height: 2.75;
+  height: 354px;
   background-image: url(../../assets/images/dark-wood.png);
   font-family: "Merriweather", serif;
   font-weight: 300; }
@@ -744,14 +749,27 @@ object {
     width: 50%;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    .site-footer .site-info a {
+      color: white;
+      text-decoration: none; }
+      .site-footer .site-info a:hover {
+        text-decoration: underline; }
     .site-footer .site-info h3 {
       color: #d99054;
       font-family: "Novecentos", sans-serif;
-      font-weight: normal; }
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      padding-top: 50px;
+      line-height: .5; }
     .site-footer .site-info ul {
       list-style: none;
       padding: 0;
       margin: 0; }
+    .site-footer .site-info i {
+      font-size: 1.25rem;
+      padding-right: 5px; }
+  .site-footer .footer-logo {
+    padding: 60px 50px; }
   .site-footer .legal {
     font-family: "Novecentos", sans-serif;
     width: 100%;
