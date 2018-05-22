@@ -10,6 +10,7 @@
     background-image: url(../../assets/images/dark-wood.png);
     font-family: "Merriweather", serif;
     font-weight: 300;
+
     .site-info {
         display: flex;
         width: 50%;
@@ -17,6 +18,7 @@
         a {
             color: white;
             text-decoration: none;
+            
             &:hover {
                 text-decoration: underline;
             }
