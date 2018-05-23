@@ -27,3 +27,22 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+function inhabitent_dynamic_css() {
+	if ( ! is_page_template( "page-templates/about.php" ) ) {
+		return;
+	}
+	$image = CFS()->get( "hero_image" );
+	if ( ! $image ) {
+		return;
+	}
+	$hero_css = "
+	body {
+		background-color: darkslategrey;
+		color: slategrey;
+	} ";
+	
+	wp_add_inline_style( "red-starter-style", $hero_css );
+}
+
+add_action( "wp_enqueue_scripts", "inhabitent_dynamic_css" );
