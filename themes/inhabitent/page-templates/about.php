@@ -16,6 +16,8 @@ get_header(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
+                    <div class="overlay"></div>
+                    <?php the_post_thumbnail( 'large' ); ?>
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 </header><!-- .entry-header -->
 

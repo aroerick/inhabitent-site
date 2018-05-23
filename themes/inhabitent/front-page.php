@@ -53,9 +53,27 @@ get_header(); ?>
 				</div>	
 			</section>
 			<section class="inhabitent-journal">
-				<h2>Inhabitent Journal</h2>
-				<div class="journals">
-					<div class="journal-entry">
+			<h2>Inhabitent Journal</h2>
+			<?php
+				$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
+				$product_posts = get_posts( $args ); // returns an array of posts
+			?>
+			<div class="journals">
+			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+				<div class="journal-entry">
+					<?php	
+					if ( has_post_thumbnail() ) :
+						the_post_thumbnail( 'large' ); 
+					endif;
+					?>
+					<div class="journal-meta">
+						<?php	red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ) ?>
+						<h3><?php the_title() ?></h3>
+						<a href="<?php the_permalink(); ?>" class="uppercase black">Read Entry</a>
+					</div>
+				</div>
+			<?php endforeach; wp_reset_postdata(); ?>
+					<!-- <div class="journal-entry">
 					<img />
 						<div>
 							<p>Lorem ipsum...</p>
@@ -78,7 +96,7 @@ get_header(); ?>
 							<h3>Placeholder Title</h3>
 							<a class="uppercase black">Read Entry</a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 			<section class="latest-adventures">

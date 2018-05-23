@@ -3,6 +3,21 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+h1 {
+     font-family: "Novecentos", sans-serif;
+     text-transform: uppercase;
+     font-size: 4rem;
+
+     &.entry-title {
+        position: absolute;
+        color: white;
+        // z-index: 3;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        top: 45%;
+     }
+}
 h2 {
     font-family: "Novecentos", sans-serif;
     text-align: center;
@@ -67,18 +82,19 @@ a {
         z-index: 2;
     }
     .main-navigation {
-        font-size: 1.1rem;
         width: auto;
         z-index: 2;
 
         a {
+            font-size: 1.2rem;
             color: white;
             padding: 10px;
             text-transform: uppercase;
         }
     }
 }
-.post-17 .entry-header {
+.post-17 .entry-header,
+.post-13 .entry-header {
     height: 100vh;
 
     img {
@@ -138,7 +154,7 @@ a {
     }
 }
 .inhabitent-journal {
-    font-family: "Novecentos", sans-serif;
+    font-family: "Merriweather", serif;
     margin: 30px 50px;
 
     .journals {
@@ -147,10 +163,23 @@ a {
 
         img {
             border-bottom: 5px solid #E1E1E1;
+            height: 280px;
+            width: auto;
         }
         .journal-entry {
-            width: 400px;
+            width: 390px;
             border: 1px solid #E1E1E1;
+            
+            .journal-meta {
+                padding: 10px;
+                line-height: 1.25;
+            }
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-family: "Novecentos", sans-serif;
+            text-transform: uppercase;
+            color: #248A83;
         }
     }
 }
@@ -189,3 +218,4 @@ a {
         display: none;
     }
 }
+/*About Page*/
