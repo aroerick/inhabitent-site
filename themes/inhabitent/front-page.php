@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -76,7 +76,7 @@ get_header(); ?>
 					endif;
 					?>
 					<div class="journal-content">
-						<?php	red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ) ?>
+						<?php	inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ) ?>
 						<h3><?php the_title() ?></h3>
 						<a href="<?php the_permalink(); ?>" class="uppercase black">Read Entry</a>
 					</div>
