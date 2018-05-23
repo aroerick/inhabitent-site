@@ -53,29 +53,32 @@ get_header(); ?>
 				</div>	
 			</section>
 			<section class="inhabitent-journal">
-				<div class="journal-entry">
-				<img />
-					<div>
-						<p></p>
-						<h3></h3>
-						<a></a>
-					</div>
-				</div>
-				<div class="journal-entry">
+				<h2 class="uppercase">Inhabitent Journal</h2>
+				<div class="journals">
+					<div class="journal-entry">
 					<img />
-					<div>
-						<p></p>
-						<h3></h3>
-						<a></a>
+						<div>
+							<p>Lorem ipsum...</p>
+							<h3>Placeholder Title</h3>
+							<a class="uppercase">Read Entry</a>
+						</div>
 					</div>
-				</div>
-				<div class="journal-entry">
-				<img />
-					<div>
-						<p></p>
-						<h3></h3>
-						<a></a>
-					</div>s
+					<div class="journal-entry">
+						<img />
+						<div>
+							<p>Lorem ipsum...</p>
+							<h3>Placeholder Title</h3>
+							<a class="uppercase">Read Entry</a>
+						</div>
+					</div>
+					<div class="journal-entry">
+					<img />
+						<div>
+							<p>Lorem ipsum...</p>
+							<h3>Placeholder Title</h3>
+							<a class="uppercase">Read Entry</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main><!-- #main -->
