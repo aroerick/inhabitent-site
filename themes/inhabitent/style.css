@@ -867,7 +867,7 @@ a {
     .inhabitent-journal .journals .journal-entry {
       width: 390px;
       border: 1px solid #E1E1E1; }
-      .inhabitent-journal .journals .journal-entry .journal-meta {
+      .inhabitent-journal .journals .journal-entry .journal-content {
         padding: 10px;
         line-height: 1.25; }
     .inhabitent-journal .journals h3 {

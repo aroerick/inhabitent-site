@@ -18,39 +18,48 @@ get_header(); ?>
 					</header>
 				<?php endif; ?>
 
-				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content' ); ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</header><!-- .entry-header -->
+					</article><!-- #post-## -->
 
 				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
 				
 			<section class="shop-stuff">
 				<h2>Shop Stuff</h2>
-				<div class="product-types">
-					<div class="shop-type do">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/do.svg" width="75px" alt="Do Stuff icon" />
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-						<a class="uppercase green" href="#">Do Stuff</a>
-					</div>
-					<div class="shop-type eat">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/eat.svg" width="75px" alt="Eat Stuff icon" />
-						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-						<a class="uppercase green" href="#">Eat Stuff</a>
-					</div>
-					<div class="shop-type sleep">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/sleep.svg" width="75px" alt="Sleep Stuff icon" />
-						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-						<a class="uppercase green" href="#" class="uppercase" href="#">Sleep Stuff</a>
-					</div>
-					<div class="shop-type wear">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/wear.svg" width="75px" alt="Wear Stuff icon" />
-						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-						<a class="uppercase green" href="#">Wear Stuff</a>
-					</div>
-				</div>	
+				<?php
+				$terms = get_terms( array(
+					"taxonomy" => "product_type",
+					"hide_empty" => 0,
+				) );
+				
+				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
+
+					<div class="product-types">
+					
+					<?php foreach ( $terms as $term ) : ?>
+
+						<div class="shop-type">
+
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/' . $term->slug; ?>.svg" width="75px" 
+							alt="<?php echo $term->name; ?>" />
+
+						<p><?php echo $term->description; ?></p>
+
+						<p>
+							<a class="uppercase green" href="<?php echo get_term_link( $term ); ?>">
+							<?php echo $term->name; ?> Stuff</a>
+						</p>
+				</div>
+				<?php endforeach ?>
+				</div>
+				<?php endif; ?>	
+
 			</section>
 			<section class="inhabitent-journal">
 			<h2>Inhabitent Journal</h2>
@@ -66,37 +75,13 @@ get_header(); ?>
 						the_post_thumbnail( 'large' ); 
 					endif;
 					?>
-					<div class="journal-meta">
+					<div class="journal-content">
 						<?php	red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ) ?>
 						<h3><?php the_title() ?></h3>
 						<a href="<?php the_permalink(); ?>" class="uppercase black">Read Entry</a>
 					</div>
 				</div>
-			<?php endforeach; wp_reset_postdata(); ?>
-					<!-- <div class="journal-entry">
-					<img />
-						<div>
-							<p>Lorem ipsum...</p>
-							<h3>Placeholder Title</h3>
-							<a class="uppercase black">Read Entry</a>
-						</div>
-					</div>
-					<div class="journal-entry">
-						<img />
-						<div>
-							<p>Lorem ipsum...</p>
-							<h3>Placeholder Title</h3>
-							<a class="uppercase black">Read Entry</a>
-						</div>
-					</div>
-					<div class="journal-entry">
-					<img />
-						<div>
-							<p>Lorem ipsum...</p>
-							<h3>Placeholder Title</h3>
-							<a class="uppercase black">Read Entry</a>
-						</div>
-					</div> -->
+					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 			</section>
 			<section class="latest-adventures">
