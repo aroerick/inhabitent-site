@@ -39,7 +39,7 @@
 					</div>
 				</div><!-- .site-info -->
 				<div class="footer-logo">
-					<img src="<?php echo get_template_directory_uri() ?>/assets/images/inhabitent-logo-text.svg" width="330px" alt="Inhabitent Logo" />
+					<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-text.svg" width="330px" alt="Inhabitent Logo" />
 				</div>
 				<div class="legal">
 					<p class="uppercase">copyright &copy; 2018 inhabitent</p>

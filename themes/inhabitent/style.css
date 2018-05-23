@@ -723,6 +723,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+h2 {
+  font-family: "Novecentos", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.75rem;
+  color: #2f1339; }
+
 .site-header {
   width: 100%;
   min-width: 1120px;
@@ -759,6 +766,7 @@ object {
   background-color: rgba(0, 0, 0, 0.35);
   width: 100%;
   height: 100vh;
+  min-height: 880px;
   position: absolute; }
 
 .site-content .site-logo {
@@ -768,6 +776,50 @@ object {
   left: 0;
   right: 0;
   top: 300px; }
+
+.shop-stuff {
+  text-align: center;
+  margin: 50px 0; }
+  .shop-stuff .product-types {
+    font-family: "Merriweather", serif;
+    font-size: 1.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 40px; }
+    .shop-stuff .product-types .shop-type {
+      width: 290px;
+      border: 1px solid #E1E1E1;
+      border-top: 5px solid #E1E1E1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px;
+      margin: 0px auto; }
+      .shop-stuff .product-types .shop-type:hover {
+        border: 1px solid #d99054;
+        border-top: 5px solid #d99054; }
+    .shop-stuff .product-types p {
+      padding-top: 15px; }
+    .shop-stuff .product-types a {
+      font-family: "Novecentos", sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      color: white;
+      background-color: #248A83;
+      width: 145px;
+      padding: 10px 0; }
+      .shop-stuff .product-types a:hover {
+        background-color: #1c5b57; }
 
 .site-footer {
   display: -webkit-box;
@@ -785,7 +837,7 @@ object {
   color: white;
   line-height: 2.75;
   height: 354px;
-  background-image: url(../../assets/images/dark-wood.png);
+  background-image: url(../../assets/images/textures/dark-wood.png);
   font-family: "Merriweather", serif;
   font-weight: 300; }
   .site-footer .site-info {
