@@ -78,7 +78,7 @@ a {
         }
     }
 }
-.entry-header {
+.post-17 .entry-header {
     height: 100vh;
 
     img {
@@ -174,5 +174,18 @@ a {
                 grid-area: 1 / 2 / 2 / 4
             }
         }
+    }
+}
+
+/*Products Archive*/
+
+.type-product {
+
+    .entry-header {
+        width: 250px;
+        height: 300px;
+    }
+    .entry-content {
+        display: none;
     }
 }
