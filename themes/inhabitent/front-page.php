@@ -51,10 +51,8 @@ get_header(); ?>
 
 						<p><?php echo $term->description; ?></p>
 
-						<p>
-							<a class="uppercase green" href="<?php echo get_term_link( $term ); ?>">
+						<a class="uppercase green" href="<?php echo get_term_link( $term ); ?>">
 							<?php echo $term->name; ?> Stuff</a>
-						</p>
 				</div>
 				<?php endforeach ?>
 				</div>

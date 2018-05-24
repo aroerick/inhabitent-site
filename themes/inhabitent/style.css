@@ -770,8 +770,7 @@ a {
       border: 1px solid #248A83; }
 
 .site-header {
-  width: 100%;
-  min-width: 1120px;
+  width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,10 +779,11 @@ a {
           justify-content: space-between;
   position: absolute;
   font-family: "Novecentos", sans-serif;
-  margin: 0 auto;
-  padding: 10px 25px; }
-  .site-header .site-branding {
-    z-index: 2; }
+  padding: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 4; }
   .site-header .main-navigation {
     width: auto;
     z-index: 2; }
@@ -818,18 +818,18 @@ a {
 
 .shop-stuff {
   text-align: center;
-  margin: 50px 0; }
+  margin: 50px auto;
+  width: 1120px; }
   .shop-stuff .product-types {
     font-family: "Merriweather", serif;
-    font-size: 1.125rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 0 40px; }
+        justify-content: space-around; }
     .shop-stuff .product-types .shop-type {
-      width: 290px;
+      width: 260px;
+      height: 300px;
       border: 1px solid #E1E1E1;
       border-top: 5px solid #E1E1E1;
       display: -webkit-box;
@@ -852,22 +852,24 @@ a {
 
 .inhabitent-journal {
   font-family: "Merriweather", serif;
-  margin: 30px 50px; }
+  margin: 30px auto;
+  width: 1120px; }
   .inhabitent-journal .journals {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .inhabitent-journal .journals img {
       border-bottom: 5px solid #E1E1E1;
-      height: 280px;
+      height: 250px;
       width: auto; }
     .inhabitent-journal .journals .journal-entry {
-      width: 390px;
+      width: 340px;
       border: 1px solid #E1E1E1; }
       .inhabitent-journal .journals .journal-entry .journal-content {
-        padding: 10px;
+        padding: 20px 10px;
         line-height: 1.25; }
     .inhabitent-journal .journals h3 {
       font-size: 1.5rem;
@@ -947,6 +949,9 @@ a {
 
 /*About Page*/
 .site-footer {
+  background-image: url(../../assets/images/textures/dark-wood.png); }
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,39 +967,40 @@ a {
   color: white;
   line-height: 2.75;
   height: 354px;
-  background-image: url(../../assets/images/textures/dark-wood.png);
+  width: 1120px;
   font-family: "Merriweather", serif;
-  font-weight: 300; }
-  .site-footer .site-info {
+  font-weight: 300;
+  margin: 0 auto; }
+  .container .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 50%;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .site-footer .site-info a {
+    .container .site-info a {
       color: white;
       text-decoration: none;
       font-family: "Merriweather", serif; }
-      .site-footer .site-info a:hover {
+      .container .site-info a:hover {
         text-decoration: underline; }
-    .site-footer .site-info h3 {
+    .container .site-info h3 {
       color: #d99054;
       font-family: "Novecentos", sans-serif;
       letter-spacing: 1.5px;
       font-weight: 700;
       padding-top: 50px;
       line-height: .5; }
-    .site-footer .site-info ul {
+    .container .site-info ul {
       list-style: none;
       padding: 0;
       margin: 0; }
-    .site-footer .site-info i {
+    .container .site-info i {
       font-size: 1.25rem;
       padding-right: 5px; }
-  .site-footer .footer-logo {
+  .container .footer-logo {
     padding: 60px 50px; }
-  .site-footer .legal {
+  .container .legal {
     font-family: "Novecentos", sans-serif;
     width: 100%;
     text-align: center; }

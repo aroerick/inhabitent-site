@@ -1,5 +1,7 @@
-
 .site-footer {
+    background-image: url(../../assets/images/textures/dark-wood.png);
+}
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -7,9 +9,10 @@
     color: white;
     line-height: 2.75;
     height: 354px;
-    background-image: url(../../assets/images/textures/dark-wood.png);
+    width: 1120px;
     font-family: "Merriweather", serif;
     font-weight: 300;
+    margin: 0 auto;
 
     .site-info {
         display: flex;
