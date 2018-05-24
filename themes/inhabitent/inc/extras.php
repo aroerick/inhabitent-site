@@ -44,5 +44,30 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 	
 // 	wp_add_inline_style( "inhabitent-style", $hero_css );
 // }
-
 // add_action( "wp_enqueue_scripts", "inhabitent_dynamic_css" );
+
+function inhabitent_login_logo(){
+	echo '<style>
+		#login h1 a {
+			background: url(' . get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text-dark.svg)
+			no-repeat !important;
+			background-size: 300px 53px !important;
+			width: 300px !important;
+			height: 53px !important;
+		}
+		#login .button.button-primary {
+			background: #248A83;
+		}
+	</style>';
+}
+add_action( 'login_head', 'inhabitent_login_logo' );
+
+function inhabitent_login_link( $url ){
+	return home_url();
+}
+add_filter( 'login_headerurl', 'inhabitent_login_link' );
+
+function inhabitent_login_title(){
+	return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'inhabitent_login_title' );

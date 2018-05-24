@@ -86,21 +86,32 @@ get_header(); ?>
 			</section>
 			<section class="latest-adventures">
 				<h2>Latest Adventures</h2>
-				<div class="adventures-grid">
-					<div class="grid-item a">
-						<a class="uppercase white">Read More</a>
+				<?php
+				$args = array( 'post_type' => 'adventure', 'order' => 'ASC', 'posts_per_page' => 4 );
+				$adventure_posts = get_posts( $args ); // returns an array of posts
+			?>
+			<div class="adventures-grid">
+			<?php $i = 0 ?>
+			<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+				<?php $i++ ?>
+				<div class="grid-item item<?php echo $i ?>">
+				<!-- <div class="overlay"></div> -->
+					<div class="wrapper">
+						<?php	
+						if ( has_post_thumbnail() ) :
+
+							the_post_thumbnail( 'large' ); 
+						endif;
+						?>
+					</div>	
+						<div class="adventure-content">
+							<h3><?php the_title() ?></h3>
+							<a href="<?php the_permalink(); ?>" class="uppercase white">Read Entry</a>
+						</div>
 					</div>
-					<div class="grid-item b">
-						<a class="uppercase white">Read More</a>
-					</div>
-					<div class="grid-item c">
-						<a class="uppercase white">Read More</a>
-					</div>
-					<div class="grid-item d">
-						<a class="uppercase white">Read More</a>
-					</div>
+					<?php endforeach; wp_reset_postdata(); ?>
+					<a class="uppercase green more-adventures">More Adventures</a>
 				</div>
-				<a class="uppercase green">More Adventures</a>
 			</section>	
 		</main><!-- #main -->
 	</div><!-- #primary -->

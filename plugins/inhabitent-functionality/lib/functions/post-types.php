@@ -63,13 +63,14 @@ function inhabitent_register_product() {
 }
 add_action( 'init', 'inhabitent_register_product', 0 );
 
+// Register Custom Post Type
 function inhabitent_register_adventure() {
 
 	$labels = array(
 		'name'                  => 'Adventures',
 		'singular_name'         => 'Adventure',
 		'menu_name'             => 'Adventures',
-		'name_admin_bar'        => 'Adventure Type',
+		'name_admin_bar'        => 'Adventure',
 		'archives'              => 'Adventure Archives',
 		'attributes'            => 'Adventure Attributes',
 		'parent_item_colon'     => 'Parent Adventure:',
@@ -99,7 +100,6 @@ function inhabitent_register_adventure() {
 		'description'           => 'An exciting adventure.',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -109,10 +109,10 @@ function inhabitent_register_adventure() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'adventures',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'capability_type'       => 'page',
+		'capability_type'       => 'post',
 		'show_in_rest'          => true,
 	);
 	register_post_type( 'adventure', $args );
