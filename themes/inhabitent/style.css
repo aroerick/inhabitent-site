@@ -740,7 +740,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   color: #2f1339; }
 
 a {
@@ -799,7 +799,7 @@ a {
   .post-17 .entry-header img,
   .post-13 .entry-header img {
     width: auto;
-    min-width: 1400px;
+    min-width: 1170px;
     height: 100vh; }
 
 .site-content .overlay {
@@ -825,8 +825,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .shop-stuff .product-types .shop-type {
       width: 260px;
       height: 300px;
@@ -866,26 +867,26 @@ a {
       height: 250px;
       width: auto; }
     .inhabitent-journal .journals .journal-entry {
-      width: 340px;
+      width: 360px;
       border: 1px solid #E1E1E1; }
       .inhabitent-journal .journals .journal-entry .journal-content {
-        padding: 20px 10px;
+        padding: 20px 15px;
         line-height: 1.25; }
     .inhabitent-journal .journals h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-family: "Novecentos", sans-serif;
       text-transform: uppercase;
       color: #248A83; }
 
 .latest-adventures {
   margin: 30px;
-  margin: 30 auto; }
+  margin: 30 auto;
+  width: 1120px; }
   .latest-adventures .adventures-grid {
     margin: 0 auto;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr 1fr;
     grid-gap: 20px;
-    width: 1120px;
     height: 700px;
     padding: 30px 0;
     position: relative; }
@@ -895,7 +896,7 @@ a {
       width: auto;
       overflow: hidden; }
       .latest-adventures .adventures-grid .grid-item h3 {
-        padding: 400px 20px;
+        padding: 420px 20px;
         font-family: "Merriweather", serif;
         color: white;
         font-size: 1.8rem;
@@ -906,7 +907,7 @@ a {
                 transform: translateY(-45%); }
       .latest-adventures .adventures-grid .grid-item a {
         position: absolute;
-        top: 76%;
+        top: 51%;
         left: 20px; }
       .latest-adventures .adventures-grid .grid-item .wrapper {
         position: absolute;
@@ -930,14 +931,14 @@ a {
         .latest-adventures .adventures-grid .grid-item.item1 h3 {
           font-size: 3.2rem; }
         .latest-adventures .adventures-grid .grid-item.item1 a {
-          top: 88%; }
+          top: 29%; }
       .latest-adventures .adventures-grid .grid-item.item2 {
         grid-area: 1 / 2 / 2 / 4; }
         .latest-adventures .adventures-grid .grid-item.item2 h3 {
           font-size: 2.6rem; }
     .latest-adventures .adventures-grid .more-adventures {
-      font-size: 1.4rem;
-      width: 250px; }
+      font-size: 1.2rem;
+      width: 218px; }
 
 /*Products Archive*/
 .type-product .entry-header {
