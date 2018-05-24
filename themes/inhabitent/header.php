@@ -31,6 +31,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<a id="search-button" class="search-button"><i class="fas fa-search"></i></a>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

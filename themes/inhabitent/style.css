@@ -785,22 +785,23 @@ a {
           transform: translateX(-50%);
   z-index: 4; }
   .site-header .main-navigation {
-    width: auto;
+    width: 385px;
     z-index: 2; }
     .site-header .main-navigation a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: white;
-      padding: 10px;
+      padding: 0 15px;
       text-transform: uppercase; }
 
 .post-17 .entry-header,
 .post-13 .entry-header {
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .post-17 .entry-header img,
   .post-13 .entry-header img {
     width: auto;
-    min-width: 1170px;
-    height: 100vh; }
+    min-width: 1400px;
+    height: auto; }
 
 .site-content .overlay {
   background-color: rgba(0, 0, 0, 0.35);
@@ -810,11 +811,13 @@ a {
 
 .site-content .site-logo {
   position: absolute;
-  height: 300px;
+  height: 275px;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 300px; }
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .shop-stuff {
   text-align: center;
@@ -879,11 +882,9 @@ a {
       color: #248A83; }
 
 .latest-adventures {
-  margin: 30px;
-  margin: 30 auto;
+  margin: 30px auto;
   width: 1120px; }
   .latest-adventures .adventures-grid {
-    margin: 0 auto;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr 1fr;
     grid-gap: 20px;
@@ -980,6 +981,7 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .container .site-info a {
+      padding: 0;
       color: white;
       text-decoration: none;
       font-family: "Merriweather", serif; }
