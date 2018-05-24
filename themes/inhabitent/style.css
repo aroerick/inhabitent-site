@@ -722,7 +722,14 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/*General*/
+body {
+  font-family: "Merriweather", serif; }
+
+.container {
+  width: 1120px;
+  margin: 0 auto; }
+
 h1 {
   font-family: "Novecentos", sans-serif;
   text-transform: uppercase;
@@ -769,8 +776,31 @@ a {
       background-color: #248A83;
       border: 1px solid #248A83; }
 
+/*Sidebar*/
+.sidebar {
+  width: 300px;
+  min-height: 100%;
+  border-left: 1px solid #E1E1E1;
+  padding: 50px 0 0 50px; }
+  .sidebar p {
+    margin: 15px 0; }
+  .sidebar h2 {
+    font-weight: 700;
+    font-size: 1.35rem;
+    text-align: left;
+    letter-spacing: 3px; }
+  .sidebar a {
+    font-family: "Merriweather", serif;
+    color: #248A83; }
+    .sidebar a:hover {
+      color: #2f1339; }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+/*Nav Bar*/
 .site-header {
-  width: 1120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,6 +823,7 @@ a {
       padding: 0 15px;
       text-transform: uppercase; }
 
+/* Front page */
 .post-17 .entry-header,
 .post-13 .entry-header {
   height: 100vh;
@@ -821,10 +852,8 @@ a {
 
 .shop-stuff {
   text-align: center;
-  margin: 50px auto;
-  width: 1120px; }
+  margin: 50px auto; }
   .shop-stuff .product-types {
-    font-family: "Merriweather", serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -855,9 +884,7 @@ a {
       padding-top: 15px; }
 
 .inhabitent-journal {
-  font-family: "Merriweather", serif;
-  margin: 30px auto;
-  width: 1120px; }
+  margin: 30px auto; }
   .inhabitent-journal .journals {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -882,8 +909,7 @@ a {
       color: #248A83; }
 
 .latest-adventures {
-  margin: 30px auto;
-  width: 1120px; }
+  margin: 30px auto; }
   .latest-adventures .adventures-grid {
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr 1fr;
@@ -898,7 +924,6 @@ a {
       overflow: hidden; }
       .latest-adventures .adventures-grid .grid-item h3 {
         padding: 420px 20px;
-        font-family: "Merriweather", serif;
         color: white;
         font-size: 1.8rem;
         line-height: 1.2;
@@ -913,8 +938,6 @@ a {
       .latest-adventures .adventures-grid .grid-item .wrapper {
         position: absolute;
         height: 100%; }
-        .latest-adventures .adventures-grid .grid-item .wrapper:after {
-          background: rgba(0, 0, 0, 0.35); }
       .latest-adventures .adventures-grid .grid-item img {
         position: absolute;
         width: auto;
@@ -941,6 +964,21 @@ a {
       font-size: 1.2rem;
       width: 218px; }
 
+/*Blog Post Home*/
+.journal-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .journal-main .single-post {
+    width: 800px; }
+
 /*Products Archive*/
 .type-product .entry-header {
   width: 250px;
@@ -950,60 +988,65 @@ a {
   display: none; }
 
 /*About Page*/
+.post-13 .entry-content {
+  margin: 50px auto;
+  max-width: 720px; }
+  .post-13 .entry-content h2 {
+    font-weight: bold; }
+
 .site-footer {
   background-image: url(../../assets/images/textures/dark-wood.png); }
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: white;
-  line-height: 2.75;
-  height: 354px;
-  width: 1120px;
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  margin: 0 auto; }
-  .container .site-info {
+  .site-footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .container .site-info a {
-      padding: 0;
-      color: white;
-      text-decoration: none;
-      font-family: "Merriweather", serif; }
-      .container .site-info a:hover {
-        text-decoration: underline; }
-    .container .site-info h3 {
-      color: #d99054;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+    line-height: 2.75;
+    height: 354px;
+    width: 1120px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    margin: 0 auto; }
+    .site-footer .container .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .site-footer .container .site-info a {
+        padding: 0;
+        color: white;
+        text-decoration: none;
+        font-family: "Merriweather", serif; }
+        .site-footer .container .site-info a:hover {
+          text-decoration: underline; }
+      .site-footer .container .site-info h3 {
+        color: #d99054;
+        font-family: "Novecentos", sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        padding-top: 50px;
+        line-height: .5; }
+      .site-footer .container .site-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+      .site-footer .container .site-info i {
+        font-size: 1.25rem;
+        padding-right: 5px; }
+    .site-footer .container .footer-logo {
+      padding: 60px 50px; }
+    .site-footer .container .legal {
       font-family: "Novecentos", sans-serif;
-      letter-spacing: 1.5px;
-      font-weight: 700;
-      padding-top: 50px;
-      line-height: .5; }
-    .container .site-info ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-    .container .site-info i {
-      font-size: 1.25rem;
-      padding-right: 5px; }
-  .container .footer-logo {
-    padding: 60px 50px; }
-  .container .legal {
-    font-family: "Novecentos", sans-serif;
-    width: 100%;
-    text-align: center; }
+      width: 100%;
+      text-align: center; }

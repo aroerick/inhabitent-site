@@ -1,57 +1,58 @@
 .site-footer {
     background-image: url(../../assets/images/textures/dark-wood.png);
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    line-height: 2.75;
-    height: 354px;
-    width: 1120px;
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    margin: 0 auto;
 
-    .site-info {
+    .container {
         display: flex;
-        width: 50%;
-        justify-content: space-around;
-        a {
-            padding: 0;
-            color: white;
-            text-decoration: none;
-            font-family: "Merriweather", serif;
-            
-            &:hover {
-                text-decoration: underline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        line-height: 2.75;
+        height: 354px;
+        width: 1120px;
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        margin: 0 auto;
+
+        .site-info {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            a {
+                padding: 0;
+                color: white;
+                text-decoration: none;
+                font-family: "Merriweather", serif;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            h3 {
+                color: #d99054;
+                font-family: "Novecentos", sans-serif;
+                letter-spacing: 1.5px;
+                font-weight: 700;
+                padding-top: 50px;
+                line-height: .5;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            i {
+                font-size: 1.25rem;
+                padding-right: 5px;
             }
         }
-        h3 {
-            color: #d99054;
+        .footer-logo {
+            padding: 60px 50px;
+        }
+        .legal {
             font-family: "Novecentos", sans-serif;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-            padding-top: 50px;
-            line-height: .5;
+            width: 100%;
+            text-align: center;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        i {
-            font-size: 1.25rem;
-            padding-right: 5px;
-        }
-    }
-    .footer-logo {
-        padding: 60px 50px;
-    }
-    .legal {
-        font-family: "Novecentos", sans-serif;
-        width: 100%;
-        text-align: center;
     }
 }

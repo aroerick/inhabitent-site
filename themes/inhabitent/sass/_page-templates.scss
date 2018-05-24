@@ -2,7 +2,14 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/*General*/
+body {
+    font-family: "Merriweather", serif;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
 h1 {
      font-family: "Novecentos", sans-serif;
      text-transform: uppercase;
@@ -69,8 +76,41 @@ a {
     }
 }
 
+/*Sidebar*/
+
+.sidebar {
+    width: 300px;
+    min-height: 100%;
+    border-left: 1px solid #E1E1E1;
+    padding: 50px 0 0 50px;
+
+    p {
+        margin: 15px 0;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 1.35rem;
+        text-align: left;
+        letter-spacing: 3px;
+    }
+    a {
+        font-family: "Merriweather", serif;
+        color: #248A83;
+
+        &:hover {
+            color: #2f1339;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*Nav Bar*/
+
 .site-header {
-    width: 1120px;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -92,8 +132,11 @@ a {
         }
     }
 }
-.post-17 .entry-header,
-.post-13 .entry-header {
+
+/* Front page */
+
+.post-17 /*front-page*/ .entry-header,
+.post-13 /*about*/ .entry-header {
     height: 100vh;
     overflow: hidden;
 
@@ -124,10 +167,8 @@ a {
 .shop-stuff {
     text-align: center;
     margin: 50px auto;
-    width: 1120px;
 
     .product-types {
-        font-family: "Merriweather", serif;
         display: flex;
         justify-content: space-between;
 
@@ -153,9 +194,7 @@ a {
     }
 }
 .inhabitent-journal {
-    font-family: "Merriweather", serif;
     margin: 30px auto;
-    width: 1120px;
 
     .journals {
         display: flex;
@@ -185,7 +224,6 @@ a {
 }
 .latest-adventures {
     margin: 30px auto;
-    width: 1120px;
 
     .adventures-grid {
         display: grid;
@@ -203,7 +241,6 @@ a {
 
             h3 {
                 padding: 420px 20px;
-                font-family: "Merriweather", serif;
                 color: white;
                 font-size: 1.8rem;
                 line-height: 1.2;
@@ -219,10 +256,6 @@ a {
             .wrapper {
                 position: absolute;
                 height: 100%;
-
-                &:after {
-                    background: rgba(0, 0, 0, 0.35);
-                }
             }
             img {
                 position:absolute;
@@ -263,6 +296,18 @@ a {
     }
 }
 
+/*Blog Post Home*/
+
+.journal-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .single-post {
+        width: 800px;
+    }
+}
+
 /*Products Archive*/
 
 .type-product {
@@ -277,3 +322,15 @@ a {
 }
 
 /*About Page*/
+
+.post-13 {
+
+    .entry-content {
+        margin: 50px auto;
+        max-width: 720px;
+
+        h2 {
+            font-weight: bold;
+        }
+    }
+}

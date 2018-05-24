@@ -30,7 +30,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 				
-			<section class="shop-stuff">
+			<section class="shop-stuff container">
 				<h2>Shop Stuff</h2>
 				<?php
 				$terms = get_terms( array(
@@ -59,7 +59,7 @@ get_header(); ?>
 				<?php endif; ?>	
 
 			</section>
-			<section class="inhabitent-journal">
+			<section class="inhabitent-journal container">
 			<h2>Inhabitent Journal</h2>
 			<?php
 				$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
@@ -82,7 +82,7 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 			</section>
-			<section class="latest-adventures">
+			<section class="latest-adventures container">
 				<h2>Latest Adventures</h2>
 				<?php
 				$args = array( 'post_type' => 'adventure', 'order' => 'ASC', 'posts_per_page' => 4 );
