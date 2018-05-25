@@ -62,7 +62,7 @@ get_header(); ?>
 			<section class="inhabitent-journal container">
 			<h2>Inhabitent Journal</h2>
 			<?php
-				$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
+				$args = array( 'post_type' => 'post', 'order' => 'DSC', 'posts_per_page' => 3 );
 				$product_posts = get_posts( $args ); // returns an array of posts
 			?>
 			<div class="journals">
