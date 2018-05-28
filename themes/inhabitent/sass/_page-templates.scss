@@ -10,6 +10,9 @@ body {
     width: 1120px;
     margin: 0 auto;
 }
+.required {
+    color: #D99045;
+}
 h1 {
      font-family: "Novecentos", sans-serif;
      text-transform: uppercase;
@@ -18,7 +21,6 @@ h1 {
      &.entry-title {
         position: absolute;
         color: white;
-        // z-index: 3;
         text-align: center;
         margin: 0 auto;
         width: 100%;
@@ -291,14 +293,12 @@ a {
     }
 }
 
-
 .sidebar-page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 100px;
 
-    /*Find Us*/
+/*Find Us*/
 
     .page {
         position: relative;
@@ -307,7 +307,7 @@ a {
 
         h1 {
             font-size: 2rem;
-            color: #404040;
+            color: #2f1339;
         }
         .entry-header {
             position: absolute;
@@ -317,6 +317,7 @@ a {
             h1 {
                 text-align: left;
                 font-size: 2.4rem;
+                color: #404040;
             }
         }
 
@@ -325,9 +326,6 @@ a {
             label {
                 font-family: "Novecentos", sans-serif;
                 font-size: 1.1rem;
-            }
-            .required {
-                color: #D99045;
             }
             input, textarea {
                 background: #F4F4F4;
@@ -344,7 +342,9 @@ a {
                 background: #248A83;
                 padding: 15px 20px;
                 border: none;
+                border-radius: 0;
                 box-shadow: none;
+                text-shadow: none;
         
                 &:hover {
                     background-color: #1c5b57;
@@ -356,7 +356,7 @@ a {
         margin-top: 150px;
     }
 
-    /*Blog Post Home*/
+/*Blog Post Home*/
 
     .post {
         position: relative;
@@ -378,14 +378,18 @@ a {
             top: 60px;
             max-width: 73%;
             text-align: left;
-            padding: 10px 20px;
-            line-height: 1;
+            padding: 15px 25px;
+            line-height: 1.1;
 
-            a {
+            a, .entry-title {
                 color: white;
                 font-size: 2.2rem;
                 font-weight: 700;
                 padding: 0;
+
+                &:hover {
+                    color: #dbd6ba;
+                }
             }
         }
         .entry-meta {
@@ -505,5 +509,156 @@ a {
         h2 {
             font-weight: bold;
         }
+    }
+}
+
+/*Journal Singles*/
+
+.post {
+
+    .entry-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: white;
+    }
+    .comments-link {
+
+        a {
+            color: white;
+            padding: 0;
+
+            &:hover {
+                color: #dbd6ba;
+            }
+        }
+    }
+    .entry-footer {
+        font-family: "Novecentos", sans-serif;
+        text-transform: uppercase;
+        margin: 20px 0;
+
+        .cat-links, .tag-links {
+            padding-right: 20px;
+        }
+        a {
+            color: #248A83;
+            padding: 0;
+
+            &:hover {
+                color: #2f1339;
+            }
+        }
+    }
+}
+
+/*Comments*/
+
+.comments-title {
+    text-align: left;
+    font-weight: 700;
+}
+.comment-list {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #E1E1E1;
+
+    .children li{
+        border-top: 1px solid #E1E1E1;
+        padding: 20px 0;
+    }
+    .comment-body {
+        display: flex;
+        padding: 20px 0;
+
+        .comment-content {
+            width: 100%;
+            // border-bottom: 1px solid #E1E1E1;
+        }
+        img {
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+        cite {
+            font-weight: bold;
+            font-style: normal;
+        }
+        time {
+            color: #A1A1A1;
+        }
+        a {
+            font-family: "Merriweather", serif;
+            color: #248A83;
+            padding: 0;
+        }
+    }
+}
+.comment-reply-title {
+    font-family: "Novecentos", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.comment-form {
+    font-family: "Novecentos", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    width: 790px;
+    margin-bottom: 75px;
+
+    .comment-notes {
+        font-family: "Merriweather", serif;
+        text-transform: none;
+    }
+    input, textarea {
+        background: #F4F4F4;
+        border-radius: 0;
+        border: 1px solid #E1E1E1;
+        padding: 6px 10px;
+        margin-top: 10px;
+    }
+    p {
+        display: flex;
+        flex-direction: column;
+
+        &.logged-in-as {
+            display: flex;
+            flex-direction: row;
+        
+            a {
+                color: #248A83;
+                font-family: "Merriweather", serif;
+                text-transform: none;
+                padding: 0;
+                margin: 0 2px 0 10px;
+        
+                &:hover {
+                    color: #2f1339;
+                }
+            }
+        }
+    }
+    .comment-form-comment,
+    .comment-form-url,
+    .comment-form-cookies-consent {
+        width: 100%;
+    }
+    .comment-form-author{
+        width: 50%;
+        padding-right: 15px;
+    }
+    .comment-form-email {
+        width: 50%;
+    }
+    .submit {
+    font-family: "Novecentos", sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: white;
+    background: #248A83;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
     }
 }
