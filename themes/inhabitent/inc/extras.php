@@ -126,7 +126,7 @@ function inhabitent_archive_title( $title ){
 		$title = 'Shop Stuff';
 	}
 	elseif( is_tax( 'product_type' ) ){
-		$title = single_term_title( '<h1 class="shop-title">', 'false' );
+		$title = single_term_title( '', 'false' );
 	}
 	return $title;
 }

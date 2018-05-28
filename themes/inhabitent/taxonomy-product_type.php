@@ -10,11 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container product-taxonomy-archive" role="main">
 		<header class="page-header">
-				<?php
-					inhabitent_archive_title( '<h1 class="page-title shop-title">', '</h1>' );
-				?>
-		</header><!-- .page-header -->
+            <h1 class="shop-title"><?php inhabitent_archive_title( '', '' ); ?></h1>
         <?php echo term_description(); ?>
+		</header><!-- .page-header -->
 		<div class="products-archive">
 		<?php if ( have_posts() ) : ?>
 

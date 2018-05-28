@@ -62,9 +62,9 @@ a {
         }
     }
     &.black {
-        color: black;
+        color: #404040;
         background-color: white;
-        border: 1px solid black;
+        border: 1px solid #404040;
         // width: 145px;
         // padding: 10px 0;
 
@@ -291,13 +291,72 @@ a {
     }
 }
 
-/*Blog Post Home*/
 
-.journal-main {
+.sidebar-page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+
+    /*Find Us*/
+
+    .page {
+        position: relative;
+        width: 790px;
+        padding: 0px 30px 0 0;
+
+        h1 {
+            font-size: 2rem;
+            color: #404040;
+        }
+        .entry-header {
+            position: absolute;
+            top: -410px;
+            width: 200px;
+
+            h1 {
+                text-align: left;
+                font-size: 2.4rem;
+            }
+        }
+
+        form {
+
+            label {
+                font-family: "Novecentos", sans-serif;
+                font-size: 1.1rem;
+            }
+            .required {
+                color: #D99045;
+            }
+            input, textarea {
+                background: #F4F4F4;
+                border-radius: 0;
+                border: 1px solid #E1E1E1;
+                padding: 6px 10px;
+                margin-top: 10px;
+            }
+            .wpcf7-submit {
+                font-family: "Novecentos", sans-serif;
+                text-transform: uppercase;
+                font-size: .9rem;
+                color: white;
+                background: #248A83;
+                padding: 15px 20px;
+                border: none;
+                box-shadow: none;
+        
+                &:hover {
+                    background-color: #1c5b57;
+                }
+            }
+        }
+    }
+    .map-insert {
+        margin-top: 150px;
+    }
+
+    /*Blog Post Home*/
 
     .post {
         position: relative;
@@ -347,18 +406,17 @@ a {
 
 /*Products Archive*/
 
-.shop-title {
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 2.6rem;
-}
-.product-taxonomy-archive {
+.page-header {
 
-    p {
-        margin: 0 auto;
+    .shop-title {
+        width: 100%;
+        margin: 10px auto;
         text-align: center;
-        margin-bottom: 55px;
+        font-size: 2.6rem;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 50px;
     }
 }
 .menu-shop-menu-container {
@@ -428,7 +486,7 @@ a {
                     margin: 0px 5px;
                     height: 36px;
                     flex-grow: 1;
-                    border-bottom: 2px dotted black;
+                    border-bottom: 2px dotted #404040;
                 }
             }
         }
