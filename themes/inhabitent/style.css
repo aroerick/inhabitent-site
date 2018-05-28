@@ -1012,14 +1012,24 @@ a {
   content: "\2192"; }
 
 /*Products Archive*/
+.shop-title {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 2.6rem; }
+
+.product-taxonomy-archive p {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 55px; }
+
 .menu-shop-menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 1px dashed #A1A1A1; }
+          justify-content: center; }
   .menu-shop-menu-container .menu {
     list-style: none;
     display: -webkit-box;
@@ -1032,14 +1042,10 @@ a {
       text-transform: uppercase;
       font-size: 1.2rem;
       padding: 0px 25px; }
+      .menu-shop-menu-container .menu a:hover {
+        color: #2f1339; }
 
-.shop-title {
-  width: 100%;
-  margin: 10px auto;
-  text-align: center;
-  font-size: 2.6rem; }
-
-.products-archive-main {
+.products-archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,16 +1058,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px auto; }
-  .products-archive-main a {
+  margin-bottom: 50px;
+  padding-top: 50px;
+  border-top: 1px dashed #A1A1A1; }
+  .products-archive a {
     padding: 0; }
-  .products-archive-main .type-product {
+  .products-archive .type-product {
     border: 1px solid #E1E1E1;
     overflow: hidden;
     position: relative;
     width: 262px;
     height: 300px; }
-    .products-archive-main .type-product .entry-header img {
+    .products-archive .type-product .entry-header img {
       position: absolute;
       height: 81%;
       width: auto;
@@ -1071,7 +1079,7 @@ a {
       top: 0;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
-    .products-archive-main .type-product .entry-header .entry-content {
+    .products-archive .type-product .entry-header .entry-content {
       font-family: "Merriweather", serif;
       color: #2f1339;
       width: 100%;
@@ -1081,7 +1089,7 @@ a {
       position: absolute;
       bottom: -7px;
       padding: 0px 10px; }
-      .products-archive-main .type-product .entry-header .entry-content .dots {
+      .products-archive .type-product .entry-header .entry-content .dots {
         margin: 0px 5px;
         height: 36px;
         -webkit-box-flex: 1;

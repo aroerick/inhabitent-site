@@ -347,10 +347,23 @@ a {
 
 /*Products Archive*/
 
+.shop-title {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.product-taxonomy-archive {
+
+    p {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+}
 .menu-shop-menu-container {
     display: flex;
     justify-content: center;
-    border-bottom: 1px dashed #A1A1A1;
 
     .menu {
         list-style: none;
@@ -363,21 +376,21 @@ a {
         text-transform: uppercase;
         font-size: 1.2rem;
         padding: 0px 25px;
+
+            &:hover {
+                color: #2f1339;
+            }
         }
     }
 }
-.shop-title {
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 2.6rem;
-}
-.products-archive-main {
+.products-archive {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-top: 1px dashed #A1A1A1;
 
     a {
         padding: 0;

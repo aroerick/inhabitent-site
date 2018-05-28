@@ -8,13 +8,13 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main container" role="main">
+		<main id="main" class="site-main container product-taxonomy-archive" role="main">
 		<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title shop-title">', '</h1>' );
+					inhabitent_archive_title( '<h1 class="page-title shop-title">', '</h1>' );
 				?>
 		</header><!-- .page-header -->
-		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'archive-menu' ) ); ?>
+        <?php echo term_description(); ?>
 		<div class="products-archive">
 		<?php if ( have_posts() ) : ?>
 
