@@ -1172,6 +1172,30 @@ a {
     .post .entry-footer a:hover {
       color: #2f1339; }
 
+/*Products Singles*/
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0; }
+  .product .entry-header {
+    width: 50%;
+    padding: 30px; }
+  .product .entry-content {
+    width: 50%;
+    padding: 20px;
+    margin: 0; }
+    .product .entry-content h2 {
+      text-align: left;
+      font-weight: 700;
+      color: #D99045;
+      margin: 0; }
+    .product .entry-content .price {
+      font-family: "Novecentos", serif;
+      font-weight: 300;
+      font-size: 2rem;
+      margin: 0; }
+
 /*Comments*/
 .comments-title {
   text-align: left;

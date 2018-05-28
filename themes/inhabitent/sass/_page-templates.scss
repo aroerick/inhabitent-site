@@ -551,6 +551,36 @@ a {
     }
 }
 
+/*Products Singles*/
+
+.product {
+    display: flex;
+    margin: 100px 0;
+
+    .entry-header {
+        width: 50%;
+        padding: 30px;
+    }
+    .entry-content {
+        width: 50%;
+        padding: 20px;
+        margin: 0;
+
+        h2 {
+            text-align: left;
+            font-weight: 700;
+            color: #D99045;
+            margin: 0;
+        }
+        .price {
+            font-family: "Novecentos", serif;
+            font-weight: 300;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+}
+
 /*Comments*/
 
 .comments-title {
