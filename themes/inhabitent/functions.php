@@ -25,6 +25,9 @@ function inhabitent_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
 	) );
+	register_nav_menus( array(
+		'secondary' => esc_html( 'Archive Menu' ),
+	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(

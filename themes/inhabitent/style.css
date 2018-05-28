@@ -947,8 +947,6 @@ a {
         -webkit-transform: translate(-12%, -50%);
                 transform: translate(-12%, -50%);
         z-index: -1; }
-        .latest-adventures .adventures-grid .grid-item img:after {
-          background: rgba(0, 0, 0, 0.35); }
       .latest-adventures .adventures-grid .grid-item.item1 {
         grid-area: 1 / 1 / 3 / 2; }
         .latest-adventures .adventures-grid .grid-item.item1 h3 {
@@ -1014,6 +1012,33 @@ a {
   content: "\2192"; }
 
 /*Products Archive*/
+.menu-shop-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px dashed #A1A1A1; }
+  .menu-shop-menu-container .menu {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0 0 50px 0; }
+    .menu-shop-menu-container .menu a {
+      color: #248A83;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding: 0px 25px; }
+
+.shop-title {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 2.6rem; }
+
 .products-archive-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,12 +1051,43 @@ a {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .products-archive-main .type-product .entry-header {
-    width: 250px;
+          justify-content: space-between;
+  margin: 50px auto; }
+  .products-archive-main a {
+    padding: 0; }
+  .products-archive-main .type-product {
+    border: 1px solid #E1E1E1;
+    overflow: hidden;
+    position: relative;
+    width: 262px;
     height: 300px; }
-  .products-archive-main .type-product .entry-content {
-    display: none; }
+    .products-archive-main .type-product .entry-header img {
+      position: absolute;
+      height: 81%;
+      width: auto;
+      max-width: none;
+      border-bottom: 5px solid #E1E1E1;
+      left: 50%;
+      top: 0;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .products-archive-main .type-product .entry-header .entry-content {
+      font-family: "Merriweather", serif;
+      color: #2f1339;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      bottom: -7px;
+      padding: 0px 10px; }
+      .products-archive-main .type-product .entry-header .entry-content .dots {
+        margin: 0px 5px;
+        height: 36px;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        border-bottom: 2px dotted black; }
 
 /*About Page*/
 .post-13 .entry-content {
