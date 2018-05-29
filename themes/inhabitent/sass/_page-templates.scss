@@ -134,6 +134,9 @@ a {
                         color: #dbd6ba;
                     }
                 }
+                input{
+                    color: white;
+                }
             }
         }
     }
@@ -184,7 +187,8 @@ a {
 /* Front page */
 
 .post-17 /*front-page*/ .entry-header,
-.post-13 /*about*/ .entry-header {
+.post-13 /*about*/ .entry-header,
+.adventure {
     height: 100vh;
     overflow: hidden;
 
