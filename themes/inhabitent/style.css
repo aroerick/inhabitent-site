@@ -1173,24 +1173,24 @@ a {
       color: #2f1339; }
 
 /*Products Singles*/
-.product {
+.single-product .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 100px 0; }
-  .product .entry-header {
+  .single-product .product .entry-header {
     width: 50%;
     padding: 30px; }
-  .product .entry-content {
+  .single-product .product .entry-content {
     width: 50%;
     padding: 20px;
     margin: 0; }
-    .product .entry-content h2 {
+    .single-product .product .entry-content h2 {
       text-align: left;
       font-weight: 700;
       color: #D99045;
       margin: 0; }
-    .product .entry-content .price {
+    .single-product .product .entry-content .price {
       font-family: "Novecentos", serif;
       font-weight: 300;
       font-size: 2rem;
@@ -1297,6 +1297,44 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none; }
+
+/*404 Page*/
+.main-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .main-404 input {
+    font-family: "Merriweather", serif;
+    background: #F4F4F4;
+    border-radius: 0;
+    border: 1px solid #E1E1E1;
+    padding: 6px 10px;
+    margin-top: 10px; }
+  .main-404 .search-submit {
+    display: none; }
+  .main-404 .error-404 {
+    width: 790px; }
+  .main-404 .page-title {
+    font-size: 2.6rem; }
+  .main-404 h2 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.6rem; }
+  .main-404 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .main-404 ul a {
+      font-family: "Merriweather", serif;
+      padding: 0;
+      color: #248A83; }
+      .main-404 ul a:hover {
+        color: #2f1339; }
+  .main-404 #archives-dropdown--1 {
+    font-family: "Merriweather", serif; }
 
 .site-footer {
   background-image: url(../../assets/images/textures/dark-wood.png); }

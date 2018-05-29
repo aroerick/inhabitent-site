@@ -553,30 +553,33 @@ a {
 
 /*Products Singles*/
 
-.product {
+.single-product {
+
+    .product{
     display: flex;
     margin: 100px 0;
 
-    .entry-header {
-        width: 50%;
-        padding: 30px;
-    }
-    .entry-content {
-        width: 50%;
-        padding: 20px;
-        margin: 0;
-
-        h2 {
-            text-align: left;
-            font-weight: 700;
-            color: #D99045;
-            margin: 0;
+        .entry-header {
+            width: 50%;
+            padding: 30px;
         }
-        .price {
-            font-family: "Novecentos", serif;
-            font-weight: 300;
-            font-size: 2rem;
+        .entry-content {
+            width: 50%;
+            padding: 20px;
             margin: 0;
+
+            h2 {
+                text-align: left;
+                font-weight: 700;
+                color: #D99045;
+                margin: 0;
+            }
+            .price {
+                font-family: "Novecentos", serif;
+                font-weight: 300;
+                font-size: 2rem;
+                margin: 0;
+            }
         }
     }
 }
@@ -690,5 +693,53 @@ a {
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
+    }
+}
+
+/*404 Page*/
+
+.main-404 {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        font-family: "Merriweather", serif;
+        background: #F4F4F4;
+        border-radius: 0;
+        border: 1px solid #E1E1E1;
+        padding: 6px 10px;
+        margin-top: 10px;
+    }
+    .search-submit {
+        display: none;
+    }
+    .error-404 {
+        width: 790px;
+    }
+    .page-title {
+        font-size: 2.6rem;
+    }
+    h2 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            font-family: "Merriweather", serif;
+            padding: 0;
+            color: #248A83;
+
+            &:hover {
+                color: #2f1339;
+            }
+        }
+    }
+    #archives-dropdown--1 {
+        font-family: "Merriweather", serif;
     }
 }
