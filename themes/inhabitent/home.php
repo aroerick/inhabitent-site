@@ -23,8 +23,6 @@ get_header(); ?>
 
                     <?php get_template_part( 'template-parts/content' ); ?>
 
-                    <a class="uppercase black read-more" href="<?php the_permalink() ?>">Read More </a>
-
                 <?php endwhile; ?>
 
                 <?php the_posts_navigation(); ?>

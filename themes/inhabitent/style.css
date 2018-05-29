@@ -784,7 +784,7 @@ a {
   width: 300px;
   min-height: 100%;
   border-left: 1px solid #E1E1E1;
-  padding: 50px 0 0 50px; }
+  padding: 100px 0 0 50px; }
   .sidebar p {
     margin: 15px 0; }
   .sidebar h2 {
@@ -803,6 +803,24 @@ a {
     margin: 0; }
 
 /*Nav Bar*/
+.header-back {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #E1E1E1;
+  height: 50px;
+  position: fixed;
+  z-index: 4; }
+  .home .header-back, .page-id-13 .header-back {
+    background: none;
+    border: none;
+    position: absolute; }
+    .home .header-back .site-header, .page-id-13 .header-back .site-header {
+      position: absolute; }
+      .home .header-back .site-header .main-navigation a, .page-id-13 .header-back .site-header .main-navigation a {
+        color: white; }
+        .home .header-back .site-header .main-navigation a:hover, .page-id-13 .header-back .site-header .main-navigation a:hover {
+          color: #dbd6ba; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,21 +828,40 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
+  position: fixed;
   font-family: "Novecentos", sans-serif;
-  padding: 10px;
+  padding: 10px 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 4; }
   .site-header .main-navigation {
-    width: 385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
     z-index: 2; }
+    .site-header .main-navigation .menu-main-menu-container {
+      width: 100%;
+      height: 100%; }
+    .site-header .main-navigation .search-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .site-header .main-navigation .search-field {
+      display: none;
+      background: none;
+      border: none;
+      outline: none;
+      font-family: "Novecentos", sans-serif;
+      text-transform: uppercase; }
     .site-header .main-navigation a {
       font-size: 1rem;
-      color: white;
+      color: #248A83;
       padding: 0 15px;
       text-transform: uppercase; }
+      .site-header .main-navigation a:hover {
+        color: #2f1339; }
 
 /* Front page */
 .post-17 .entry-header,
@@ -1020,10 +1057,8 @@ a {
   .sidebar-page .post {
     position: relative;
     width: 790px;
-    padding: 50px 30px 0 0;
+    padding: 100px 30px 0 0;
     overflow: hidden; }
-    .sidebar-page .post p {
-      margin-bottom: 0; }
     .sidebar-page .post img {
       width: auto;
       min-width: 100%;
@@ -1031,7 +1066,7 @@ a {
     .sidebar-page .post .entry-title {
       position: absolute;
       background: #248A83;
-      top: 60px;
+      top: 110px;
       max-width: 73%;
       text-align: left;
       padding: 15px 25px;
@@ -1059,7 +1094,8 @@ a {
 /*Products Archive*/
 .page-header .shop-title {
   width: 100%;
-  margin: 10px auto;
+  margin: 0px auto;
+  padding-top: 100px;
   text-align: center;
   font-size: 2.6rem; }
 
@@ -1177,7 +1213,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 0; }
+  padding-top: 100px; }
   .single-product .product .entry-header {
     width: 50%;
     padding: 30px; }
@@ -1313,10 +1349,9 @@ a {
     border: 1px solid #E1E1E1;
     padding: 6px 10px;
     margin-top: 10px; }
-  .main-404 .search-submit {
-    display: none; }
   .main-404 .error-404 {
-    width: 790px; }
+    width: 790px;
+    margin-top: 50px; }
   .main-404 .page-title {
     font-size: 2.6rem; }
   .main-404 h2 {
@@ -1335,6 +1370,43 @@ a {
         color: #2f1339; }
   .main-404 #archives-dropdown--1 {
     font-family: "Merriweather", serif; }
+
+/*Search Results*/
+.results-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+  .results-main .search-submit {
+    display: none; }
+  .results-main .page-title {
+    font-size: 2.6rem;
+    border-bottom: 1px solid #E1E1E1;
+    width: 95%; }
+  .results-main .entry-title {
+    text-align: left; }
+    .results-main .entry-title a {
+      color: #248A83;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 0; }
+      .results-main .entry-title a:hover {
+        color: #2f1339; }
+  .results-main .entry-meta {
+    font-family: "Novecentos", sans-serif;
+    text-transform: uppercase; }
+  .results-main .results {
+    width: 790px;
+    padding-right: 50px;
+    margin-bottom: 100px; }
+
+.search-form-none .search-field-none {
+  font-family: "Merriweather", serif;
+  background: #F4F4F4;
+  border-radius: 0;
+  border: 1px solid #E1E1E1;
+  padding: 6px 10px;
+  margin-top: 10px; }
 
 .site-footer {
   background-image: url(../../assets/images/textures/dark-wood.png); }

@@ -54,9 +54,6 @@ a {
     &.white {
         color: white;
         border: 1px solid white;
-        // background-color: #248A83;
-        // width: 145px;
-        // padding: 10px 0;
 
         &:hover {
             background-color: #248A83;
@@ -84,7 +81,7 @@ a {
     width: 300px;
     min-height: 100%;
     border-left: 1px solid #E1E1E1;
-    padding: 50px 0 0 50px;
+    padding: 100px 0 0 50px;
 
     p {
         margin: 15px 0;
@@ -112,25 +109,74 @@ a {
 
 /*Nav Bar*/
 
+.header-back {
+    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    border-bottom: 1px solid #E1E1E1;
+    height: 50px;
+    position: fixed;
+    z-index: 4;
+
+    .home &, .page-id-13 & {
+        background: none;
+        border: none;
+        position: absolute;
+
+        .site-header {
+            position: absolute;
+
+            .main-navigation {
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        color: #dbd6ba;
+                    }
+                }
+            }
+        }
+    }
+}
 .site-header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     font-family: "Novecentos", sans-serif;
-    padding: 10px;
+    padding: 10px 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
 
     .main-navigation {
-        width: 385px;
+        display: flex;
+        width: auto;
         z-index: 2;
-
+        
+        .menu-main-menu-container {
+            width: 100%;
+            height: 100%;
+        }
+        .search-form {
+            display: flex;
+        }
+        .search-field {
+            display: none;
+            background: none;
+            border: none;
+            outline: none;
+            font-family: "Novecentos", sans-serif;
+            text-transform: uppercase;
+        }
         a {
             font-size: 1rem;
-            color: white;
+            color: #248A83;
             padding: 0 15px;
             text-transform: uppercase;
+
+            &:hover {
+                color: #2f1339;
+            }
         }
     }
 }
@@ -361,12 +407,9 @@ a {
     .post {
         position: relative;
         width: 790px;
-        padding: 50px 30px 0 0;
+        padding: 100px 30px 0 0;
         overflow: hidden;
 
-        p {
-            margin-bottom: 0;
-        }
         img {
             width: auto;
             min-width: 100%;
@@ -375,7 +418,7 @@ a {
         .entry-title {
             position: absolute;
             background: #248A83;
-            top: 60px;
+            top: 110px;
             max-width: 73%;
             text-align: left;
             padding: 15px 25px;
@@ -414,7 +457,8 @@ a {
 
     .shop-title {
         width: 100%;
-        margin: 10px auto;
+        margin: 0px auto;
+        padding-top: 100px;
         text-align: center;
         font-size: 2.6rem;
     }
@@ -557,7 +601,7 @@ a {
 
     .product{
     display: flex;
-    margin: 100px 0;
+    padding-top: 100px;
 
         .entry-header {
             width: 50%;
@@ -710,11 +754,9 @@ a {
         padding: 6px 10px;
         margin-top: 10px;
     }
-    .search-submit {
-        display: none;
-    }
     .error-404 {
         width: 790px;
+        margin-top: 50px;
     }
     .page-title {
         font-size: 2.6rem;
@@ -741,5 +783,55 @@ a {
     }
     #archives-dropdown--1 {
         font-family: "Merriweather", serif;
+    }
+}
+
+/*Search Results*/
+
+.results-main {
+    display: flex;
+    margin: 0 auto;
+    
+    .search-submit {
+        display: none;
+    }
+    .page-title {
+        font-size: 2.6rem;
+        border-bottom: 1px solid #E1E1E1;
+        width: 95%;
+    }
+    .entry-title {
+        text-align: left;
+
+        a {
+            color: #248A83;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0;
+
+            &:hover {
+                color: #2f1339;
+            }
+        }
+    }
+    .entry-meta {
+        font-family: "Novecentos", sans-serif;
+        text-transform: uppercase;
+    }
+    .results {
+        width: 790px;
+        padding-right: 50px;
+        margin-bottom: 100px;
+    }
+}
+.search-form-none {
+    
+    .search-field-none {
+        font-family: "Merriweather", serif;
+        background: #F4F4F4;
+        border-radius: 0;
+        border: 1px solid #E1E1E1;
+        padding: 6px 10px;
+        margin-top: 10px;
     }
 }

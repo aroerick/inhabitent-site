@@ -20,7 +20,9 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.' ); ?></p>
-			<?php get_search_form(); ?>
+			<form role="search" method="get" class="search-form-none" action="<?php echo home_url( '/' ); ?>">	
+				<input type="search" class="search-field-none" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+			</form>
 
 		<?php else : ?>
 
