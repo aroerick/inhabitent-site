@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 /*General*/
+
 body {
     font-family: "Merriweather", serif;
 }
@@ -73,6 +74,9 @@ a {
             border: 1px solid #248A83;
         }
     }
+}
+.fa-phone {
+    transform: scaleX(-1);
 }
 
 /*Sidebar*/
@@ -186,16 +190,20 @@ a {
 
 /* Front page */
 
-.post-17 /*front-page*/ .entry-header,
-.post-13 /*about*/ .entry-header,
+.home,
+.page-template-about,
 .adventure {
-    height: 100vh;
-    overflow: hidden;
 
-    img {
-        width: auto;
-        min-width: 1400px;
-        height: auto;
+    .entry-header {
+
+        height: 100vh;
+        overflow: hidden;
+
+        img {
+            width: auto;
+            min-width: 1400px;
+            height: auto;
+        }
     }
 }
 .site-content {
@@ -445,7 +453,7 @@ a {
             padding: 0 20px;
             position: absolute;
             right: 30px;
-            top: 542px;
+            top: 592px;
             background: #248A83;
             color: white;
         }
@@ -741,6 +749,11 @@ a {
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
+        
+        &:hover {
+            box-shadow: none;
+            background-color: #1c5b57;
+        }
     }
 }
 
