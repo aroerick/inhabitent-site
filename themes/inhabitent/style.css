@@ -230,20 +230,6 @@ th {
 */
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-BoldItalic.eot");
-  src: url("../../assets/fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../assets/fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-BoldItalic.svg") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../assets/fonts/Merriweather-LightItalic.eot");
-  src: url("../../assets/fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Merriweather-LightItalic.woff") format("woff"), url("../../assets/fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../assets/fonts/Merriweather-LightItalic.svg") format("svg");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
   src: url("../../assets/fonts/Merriweather-Light.eot");
   src: url("../../assets/fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Merriweather-Light.woff2") format("woff2"), url("../../assets/fonts/Merriweather-Light.woff") format("woff"), url("../../assets/fonts/Merriweather-Light.ttf") format("truetype"), url("../../assets/fonts/Merriweather-Light.svg") format("svg");
   font-weight: 300;
@@ -1178,13 +1164,14 @@ a {
       position: absolute;
       bottom: -7px;
       padding: 0px 10px; }
-      .products-archive .type-product .entry-header .entry-content .dots {
-        margin: 0px 5px;
-        height: 36px;
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
-        border-bottom: 2px dotted #404040; }
+
+.dots {
+  margin: 0px 5px;
+  height: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 2px dotted #404040; }
 
 /*About Page*/
 .post-13 .entry-content {
