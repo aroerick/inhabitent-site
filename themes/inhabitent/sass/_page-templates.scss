@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
 }
 .required {
-    color: #D99045;
+    color: $color__accent-light;
 }
 h1 {
      font-family: "Novecentos", sans-serif;
@@ -34,7 +34,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2.5rem;
-    color: #2f1339;
+    color: $color__accent-dark;
 }
 a {
     font-family: "Novecentos", sans-serif;
@@ -44,11 +44,11 @@ a {
     
     &.green {
         color: white;
-        background-color: #248A83;
+        background-color: $color__brand-main;
 
         &:hover {
             color: white;
-            background-color: #1c5b57;
+            background-color: $color__brand-hover;
         }
     }
     &.white {
@@ -56,19 +56,19 @@ a {
         border: 1px solid white;
 
         &:hover {
-            background-color: #248A83;
-            border: 1px solid #248A83;
+            background-color: $color__brand-main;
+            border: 1px solid $color__brand-main;
         }
     }
     &.black {
-        color: #404040;
+        color: $color__dark-main;
         background-color: white;
-        border: 1px solid #404040;
+        border: 1px solid $color__dark-main;
 
         &:hover {
             color: white;
-            background-color: #248A83;
-            border: 1px solid #248A83;
+            background-color: $color__brand-main;
+            border: 1px solid $color__brand-main;
         }
     }
 }
@@ -81,7 +81,7 @@ a {
 .sidebar {
     width: 300px;
     min-height: 100%;
-    border-left: 1px solid #E1E1E1;
+    border-left: 1px solid $color__accent-other;
     padding: 100px 0 0 50px;
 
     p {
@@ -95,10 +95,10 @@ a {
     }
     a {
         font-family: "Merriweather", serif;
-        color: #248A83;
+        color: $color__brand-main;
 
         &:hover {
-            color: #2f1339;
+            color: $color__accent-dark;
         }
     }
     ul {
@@ -113,7 +113,7 @@ a {
 .header-back {
     width: 100%;
     background: rgba(255, 255, 255, .8);
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $color__accent-other;
     height: 50px;
     position: fixed;
     z-index: 4;
@@ -174,12 +174,12 @@ a {
         }
         a {
             font-size: 1rem;
-            color: #248A83;
+            color: $color__brand-main;
             padding: 0 15px;
             text-transform: uppercase;
 
             &:hover {
-                color: #2f1339;
+                color: $color__accent-dark;
             }
         }
     }
@@ -232,8 +232,8 @@ a {
         .shop-type {
             width: 260px;
             height: 300px;
-            border: 1px solid #E1E1E1;
-            border-top: 5px solid #E1E1E1;
+            border: 1px solid $color__accent-other;
+            border-top: 5px solid $color__accent-other;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -257,13 +257,13 @@ a {
         justify-content: space-between;
 
         img {
-            border-bottom: 5px solid #E1E1E1;
+            border-bottom: 5px solid $color__accent-other;
             height: 250px;
             width: auto;
         }
         .journal-entry {
             width: 360px;
-            border: 1px solid #E1E1E1;
+            border: 1px solid $color__accent-other;
             
             .journal-content {
                 padding: 20px 15px;
@@ -274,7 +274,7 @@ a {
             font-size: 1.3rem;
             font-family: "Novecentos", sans-serif;
             text-transform: uppercase;
-            color: #248A83;
+            color: $color__brand-main;
         }
     }
 }
@@ -362,7 +362,7 @@ a {
 
         h1 {
             font-size: 2rem;
-            color: #2f1339;
+            color: $color__accent-dark;
         }
         .entry-header {
             position: absolute;
@@ -373,7 +373,7 @@ a {
                 margin-top: 465px;
                 text-align: left;
                 font-size: 2.4rem;
-                color: #404040;
+                color: $color__dark-main;
             }
         }
 
@@ -384,9 +384,9 @@ a {
                 font-size: 1.1rem;
             }
             input, textarea {
-                background: #F4F4F4;
+                background: $color__text-area;
                 border-radius: 0;
-                border: 1px solid #E1E1E1;
+                border: 1px solid $color__accent-other;
                 padding: 6px 10px;
                 margin-top: 10px;
             }
@@ -395,7 +395,7 @@ a {
                 text-transform: uppercase;
                 font-size: .9rem;
                 color: white;
-                background: #248A83;
+                background: $color__brand-main;
                 padding: 15px 20px;
                 border: none;
                 border-radius: 0;
@@ -403,7 +403,7 @@ a {
                 text-shadow: none;
         
                 &:hover {
-                    background-color: #1c5b57;
+                    background-color: $color__brand-hover;
                 }
             }
         }
@@ -427,7 +427,7 @@ a {
         }
         .entry-title {
             position: absolute;
-            background: #248A83;
+            background: $color__brand-main;
             top: 110px;
             max-width: 73%;
             text-align: left;
@@ -452,7 +452,7 @@ a {
             position: absolute;
             right: 30px;
             top: 592px;
-            background: #248A83;
+            background: $color__brand-main;
             color: white;
         }
     }
@@ -488,13 +488,13 @@ a {
         margin: 0 0 50px 0;
 
         a {
-        color: #248A83;
+        color: $color__brand-main;
         text-transform: uppercase;
         font-size: 1.2rem;
         padding: 0px 25px;
 
             &:hover {
-                color: #2f1339;
+                color: $color__accent-dark;
             }
         }
     }
@@ -512,7 +512,7 @@ a {
         padding: 0;
     }
     .type-product {
-        border: 1px solid #E1E1E1;
+        border: 1px solid $color__accent-other;
         overflow: hidden;
         position: relative;
         width: 262px;
@@ -525,7 +525,7 @@ a {
                 height: 81%;
                 width: auto;
                 max-width: none;
-                border-bottom: 5px solid #E1E1E1;
+                border-bottom: 5px solid $color__accent-other;
                 left: 50%;
                 top: 0;
                 transform: translateX( -50%);
@@ -533,7 +533,7 @@ a {
             .entry-content {
                 
                 font-family: "Merriweather", serif;
-                color: #2f1339;
+                color: $color__accent-dark;
                 width: 100%;
                 display: flex;
                 position: absolute;
@@ -549,7 +549,7 @@ a {
     margin: 0px 5px;
     height: 36px;
     flex-grow: 1;
-    border-bottom: 2px dotted #404040;
+    border-bottom: 2px dotted $color__dark-main;
 }
 
 /*About Page*/
@@ -595,11 +595,11 @@ a {
             padding-right: 20px;
         }
         a {
-            color: #248A83;
+            color: $color__brand-main;
             padding: 0;
 
             &:hover {
-                color: #2f1339;
+                color: $color__accent-dark;
             }
         }
     }
@@ -625,7 +625,7 @@ a {
             h2 {
                 text-align: left;
                 font-weight: 700;
-                color: #D99045;
+                color: $color__accent-light;
                 margin: 0;
             }
             .price {
@@ -647,10 +647,10 @@ a {
 .comment-list {
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $color__accent-other;
 
     .children li{
-        border-top: 1px solid #E1E1E1;
+        border-top: 1px solid $color__accent-other;
         padding: 20px 0;
     }
     .comment-body {
@@ -673,7 +673,7 @@ a {
         }
         a {
             font-family: "Merriweather", serif;
-            color: #248A83;
+            color: $color__brand-main;
             padding: 0;
         }
     }
@@ -696,9 +696,9 @@ a {
         text-transform: none;
     }
     input, textarea {
-        background: #F4F4F4;
+        background: $color__text-area;
         border-radius: 0;
-        border: 1px solid #E1E1E1;
+        border: 1px solid $color__accent-other;
         padding: 6px 10px;
         margin-top: 10px;
     }
@@ -711,14 +711,14 @@ a {
             flex-direction: row;
         
             a {
-                color: #248A83;
+                color: $color__brand-main;
                 font-family: "Merriweather", serif;
                 text-transform: none;
                 padding: 0;
                 margin: 0 2px 0 10px;
         
                 &:hover {
-                    color: #2f1339;
+                    color: $color__accent-dark;
                 }
             }
         }
@@ -740,7 +740,7 @@ a {
     text-transform: uppercase;
     font-size: .9rem;
     color: white;
-    background: #248A83;
+    background: $color__brand-main;
     padding: 15px 20px;
     border: none;
     border-radius: 0;
@@ -749,7 +749,7 @@ a {
         
         &:hover {
             box-shadow: none;
-            background-color: #1c5b57;
+            background-color: $color__brand-hover;
         }
     }
 }
@@ -762,9 +762,9 @@ a {
 
     input {
         font-family: "Merriweather", serif;
-        background: #F4F4F4;
+        background: $color__text-area;
         border-radius: 0;
-        border: 1px solid #E1E1E1;
+        border: 1px solid $color__accent-other;
         padding: 6px 10px;
         margin-top: 10px;
     }
@@ -788,10 +788,10 @@ a {
         a {
             font-family: "Merriweather", serif;
             padding: 0;
-            color: #248A83;
+            color: $color__brand-main;
 
             &:hover {
-                color: #2f1339;
+                color: $color__accent-dark;
             }
         }
     }
@@ -811,7 +811,7 @@ a {
     }
     .page-title {
         font-size: 2.6rem;
-        border-bottom: 1px solid #E1E1E1;
+        border-bottom: 1px solid $color__accent-other;
         width: 95%;
         margin-top: 60px;
     }
@@ -819,13 +819,13 @@ a {
         text-align: left;
 
         a {
-            color: #248A83;
+            color: $color__brand-main;
             font-size: 2rem;
             font-weight: 700;
             padding: 0;
 
             &:hover {
-                color: #2f1339;
+                color: $color__accent-dark;
             }
         }
     }
@@ -846,9 +846,9 @@ a {
     
     .search-field-none {
         font-family: "Merriweather", serif;
-        background: #F4F4F4;
+        background: $color__text-area;
         border-radius: 0;
-        border: 1px solid #E1E1E1;
+        border: 1px solid $color__accent-other;
         padding: 6px 10px;
         margin-top: 10px;
     }

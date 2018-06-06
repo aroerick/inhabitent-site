@@ -749,7 +749,7 @@ a {
     background-color: #248A83; }
     a.green:hover {
       color: white;
-      background-color: #1c5b57; }
+      background-color: #1C5B57; }
   a.white {
     color: white;
     border: 1px solid white; }
@@ -1046,7 +1046,7 @@ a {
               box-shadow: none;
       text-shadow: none; }
       .sidebar-page .page form .wpcf7-submit:hover {
-        background-color: #1c5b57; }
+        background-color: #1C5B57; }
   .sidebar-page .map-insert {
     margin-top: 150px; }
   .sidebar-page .post {
@@ -1332,7 +1332,7 @@ a {
     .comment-form .submit:hover {
       -webkit-box-shadow: none;
               box-shadow: none;
-      background-color: #1c5b57; }
+      background-color: #1C5B57; }
 
 /*404 Page*/
 .main-404 {
