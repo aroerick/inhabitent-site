@@ -37,10 +37,11 @@
 								<li><span class="bold">Monday-Friday:</span> 9am to 5pm</li>
 								<li><span class="bold">Saturday:</span> 10am to 2pm</li>
 								<li><span class="bold">Sunday:</span> Closed</li>
+							</ul>
 						</div>
 					</div><!-- .site-info -->
 					<div class="footer-logo">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-text.svg" width="330px" alt="Inhabitent Logo" />
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-text.svg" width="330" alt="Inhabitent Logo" />
 					</div>
 					<div class="legal">
 						<p class="uppercase">copyright &copy; 2018 inhabitent</p>

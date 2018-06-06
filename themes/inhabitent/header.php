@@ -27,7 +27,7 @@
 						<?php if( is_front_page() || is_page("about") ) : ?>
 						-white
 						<?php endif; ?>
-						.svg" width="50px" alt="Inhabitent Home" /></a>
+						.svg" width="50" alt="Inhabitent Home" /></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">

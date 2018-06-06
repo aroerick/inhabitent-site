@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
 		<main id="main" class="site-main container results-main" role="main">
 
 			<div class="results">
@@ -35,6 +34,5 @@ get_header(); ?>
 
 			<?php get_sidebar(); ?>
 		</main><!-- #main -->
-	</section><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -11,7 +11,7 @@ get_header(); ?>
 		
 		<main id="main" class="site-main" role="main">
 				<div class="overlay"></div>
-				<img class="site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-full.svg" width="330px" alt="Main Inhabitent Logo" />
+				<img class="site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-full.svg" width="330" alt="Main Inhabitent Logo" />
 				<?php if ( is_home() && ! is_front_page() ) : ?>
 					<header>
 						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -46,7 +46,7 @@ get_header(); ?>
 
 						<div class="shop-type">
 
-							<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/' . $term->slug; ?>.svg" width="75px" 
+							<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/' . $term->slug; ?>.svg" width="75" 
 							alt="<?php echo $term->name; ?>" />
 
 						<p><?php echo $term->description; ?></p>
